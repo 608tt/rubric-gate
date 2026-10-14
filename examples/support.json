@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "rules": [
+    {"id": "preserve-ticket", "op": "contains_all", "values": ["TICKET-1042", "2026-10-01"], "hard": true, "weight": 3},
+    {"id": "avoid-guarantees", "op": "excludes", "values": ["guaranteed", "100% certain"], "hard": true, "weight": 3},
+    {"id": "keep-next-step", "op": "contains_any", "values": ["next step", "Next step"], "hard": true},
+    {"id": "length", "op": "length", "unit": "words", "min": 20, "max": 100, "hard": false},
+    {"id": "footnotes", "op": "footnotes", "hard": true}
+  ]
+}

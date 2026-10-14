@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubric-gate"
+version = "0.1.0"
+description = "Deterministic text acceptance gates for facts, constraints and Markdown footnotes"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+rubric-gate = "rubric_gate.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["rubric_gate*"]
